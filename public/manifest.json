@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Robust Ad Blocker",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "description": "Blocks requests to common ad and tracker domains.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "tabs",
+    "notifications"
+  ],
+  "icons": [
+    {
+      "src": "logo192.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
