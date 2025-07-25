@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+BlockRight: A Modern Ad-Blocking Chrome Extension
+A high-performance, modern ad-blocking extension built with React and Material-UI, leveraging the latest Chrome Manifest V3 APIs for a fast, reliable, and clean Browse experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+About The Project
+This project was developed to create a robust and user-friendly ad blocker from the ground up. It uses Chrome's powerful Declarative Net Request API for maximum performance, ensuring that ad-blocking happens natively without slowing down your browser. The user interface is a sleek, dark-themed popup built with React and Material-UI, providing statistics and per-site controls.
 
-In the project directory, you can run:
+Features
+High-Performance Blocking: Built on Manifest V3 and the Declarative Net Request API for efficient, native ad-blocking.
 
-### `npm start`
+Modern UI: A beautiful and responsive popup menu built with React and Material-UI, featuring a dark theme.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Per-Site Whitelisting: Easily disable ad-blocking on your favorite websites with a single toggle switch in the popup.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Live Stats: View the total number of ads blocked since installation.
 
-### `npm test`
+Real-Time Badge Counter: The extension icon shows a live count of ads blocked on the current page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Comprehensive Blocklist: Comes pre-loaded with an expanded list of common ad and tracker domains.
 
-### `npm run build`
+Built With
+This project leverages a modern web development stack:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Material-UI (MUI)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Chrome Extension APIs (Manifest V3)
 
-### `npm run eject`
+JavaScript (ES6+)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Getting Started
+To get a local copy up and running, follow these simple steps.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Prerequisites
+You need to have Node.js and npm installed on your machine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Bash
 
-## Learn More
+npm install npm@latest -g
+Installation and Setup
+Clone the repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Bash
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git clone https://github.com/Indalu616/Add_blocker
 
-### Code Splitting
+Navigate to the project directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Bash
 
-### Analyzing the Bundle Size
+cd Add_blocker 
+Install NPM packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Bash
 
-### Making a Progressive Web App
+npm install
+Build the project for production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Bash
 
-### Advanced Configuration
+npm run build
+This will create a build folder in your project directory, which contains the complete, optimized extension.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Loading the Extension in Chrome
+Open your Google Chrome browser and navigate to chrome://extensions.
 
-### Deployment
+Enable "Developer mode" using the toggle switch in the top-right corner.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Click the "Load unpacked" button that appears on the top-left.
 
-### `npm run build` fails to minify
+In the file selection dialog, select the build folder from your project's directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The BlockRight extension should now appear in your list of extensions and be active!
+
+Usage
+Pin the Extension: For easy access, click the puzzle piece (🧩) icon in your Chrome toolbar and then click the pin (📌) icon next to BlockRight.
+
+View Stats: Click the extension icon in your toolbar to open the popup and see your blocking statistics.
+
+Whitelist a Site: While on a website you wish to support, open the popup and use the toggle switch to allow ads on that specific domain.
+
+See Page-Specific Blocks: The badge on the extension icon will automatically update to show you how many ad requests were blocked on the page you are currently viewing.
+
+Roadmap
+See the open issues for a list of proposed features (and known issues). Future enhancements could include:
+
+[ ] Automatic blocklist updates from sources like EasyList.
+
+[ ] Cosmetic filtering to hide empty spaces left by blocked ads.
+
+[ ] More detailed statistics and data visualizations.
+
+[ ] User-defined custom blocking rules.
+
+Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+License
+Distributed under the MIT License. See LICENSE file for more information.
